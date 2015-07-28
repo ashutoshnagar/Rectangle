@@ -1,22 +1,20 @@
 public class Rectangle {
-    private int length;
-    private int breadth;
-    public Rectangle(int length,int breadth)
+    private double length;
+    private double breadth;
+    public Rectangle(double length,double breadth)
     {
         this.length=length;
         this.breadth=breadth;
     }
 
-    public int getLength() {
-        return length;
-    }
-
-    public int getBreadth() {
-        return breadth;
-    }
-
-    public int getArea()
+    public double calculateArea()
     {
         return length*breadth;
     }
+
+    public double calculatePerimeter()
+    {
+        return length+breadth;
+    }
+
 }
