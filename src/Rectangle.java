@@ -1,4 +1,6 @@
-public class Rectangle {
+
+
+public class Rectangle implements Shape {
     private double length;
     private double breadth;
     public Rectangle(double length,double breadth)
@@ -14,7 +16,9 @@ public class Rectangle {
 
     public double calculatePerimeter()
     {
-        return length+breadth;
+        return 2*(length+breadth);
     }
+
+
 
 }
